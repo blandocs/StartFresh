@@ -57,10 +57,10 @@ public class MainActivity extends ActionBarActivity {
         View layout = inflater.inflate(R.layout.info,null);
 
         AlertDialog.Builder aDialog = new AlertDialog.Builder(this);
-        aDialog.setTitle("info"); //타이틀바 제목
-        aDialog.setView(layout); //info.xml 파일을 뷰로 셋팅
+        aDialog.setTitle("info");
+        aDialog.setView(layout);
 
-        //그냥 닫기버튼을 위한 부분
+
         aDialog.setNegativeButton("ok", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
             }
