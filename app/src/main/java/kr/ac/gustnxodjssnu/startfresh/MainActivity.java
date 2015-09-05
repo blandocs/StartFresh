@@ -60,7 +60,6 @@ public class MainActivity extends ActionBarActivity {
         aDialog.setTitle("info");
         aDialog.setView(layout);
 
-
         aDialog.setNegativeButton("ok", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
             }
