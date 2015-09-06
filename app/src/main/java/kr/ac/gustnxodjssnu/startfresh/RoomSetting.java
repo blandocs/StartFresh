@@ -3,6 +3,7 @@ package kr.ac.gustnxodjssnu.startfresh;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -36,5 +37,23 @@ public class RoomSetting extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i("RoomSetting", "onResume ");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i("RoomSetting", "onStop ");
+    }
+
+    @Override
+    protected void onPause(){
+        super.onPause();
+        Log.i("RoomSetting", "onPause ");
     }
 }

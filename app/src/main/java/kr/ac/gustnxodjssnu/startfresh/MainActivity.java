@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -27,7 +28,7 @@ public class MainActivity extends ActionBarActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
-
+        //info 있는 칸 만들기
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -68,5 +69,23 @@ public class MainActivity extends ActionBarActivity {
 
         AlertDialog info = aDialog.create();
         info.show();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i("MainActivity", "onResume ");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i("MainActivity", "onStop ");
+    }
+
+    @Override
+    protected void onPause(){
+        super.onPause();
+        Log.i("MainActivity", "onPause ");
     }
 }
